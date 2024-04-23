@@ -1,0 +1,28 @@
+
+✔ All packages installed in the project: (/Frontend)  
+    npm i bootstrap
+    npm i react-bootstrap
+    npm i react-router-dom
+    npm i react-hook-form
+    npm i axios 
+
+    npm i sweetalert
+    npm i sweetalert2
+    npm i sweetalert --save
+
+    npm i react-select
+    npm i react-icons
+    npm i react-chartjs-2
+    npm i react-chartjs2
+
+✔ Installed in Backend (/Backend)
+
+    npm i nodemon
+    npm i express
+    npm i cors
+    npm i mongodb
+    npm i bcrypt
+    npm i bcryptjs
+    npm i jsonwebtoken
+    npm i express-async-handler
+

@@ -1,0 +1,156 @@
+###
+POST http://localhost:8080/users/create-user
+Content-Type: application/json
+
+{
+    "Mid":"5N9",
+    "name":"SRIJA",
+    "password":"SRIJA",
+    "details":"SRIJA",
+    "journals":[],
+    "conferences":[],
+    "type":"Student"
+}
+
+###
+POST http://localhost:8080/users/login
+Content-Type: application/json
+
+{
+    "Mid":"5K8",
+    "name":"KARTHIK",
+    "password":"KARTHIK"
+}
+
+###
+GET http://localhost:8080/users/all-users
+
+###
+DELETE http://localhost:8080/users/delete-user
+Content-Type: application/json
+
+{
+    "Mid":"5K0"
+}
+
+###
+PUT http://localhost:8080/users/update-details
+Content-Type: application/json
+
+{
+    "Mid":"5K0",
+    "name":"Santosh",
+    "password":"Santosh",
+    "details":"Hello Bye!!"
+}
+
+###
+GET http://localhost:8080/users/user/5N3
+
+###
+POST http://localhost:8080/journal/add-journal
+Content-Type: application/json
+
+{
+    "issn":"2",
+    "authorsList":["5K8"],
+    "others":["others 1"],
+    "title":"sample 1"
+}
+
+###
+POST http://localhost:8080/journal/delete-journal
+Content-Type: application/json
+
+{
+    "issn":"2"
+}
+
+
+###
+PUT http://localhost:8080/journal/update-journal
+Content-Type: application/json
+
+{
+    "oldIssn":"3",
+    "issn":"1",
+    "authorsList":["5K6","5K0","HELLO"],
+    "others":["HELLO ADDED"],
+    "title":"HELLO ADDED"
+}
+
+###
+GET  http://localhost:8080/journal/all-journals
+
+
+###
+GET  http://localhost:8080/journal/5K0
+
+
+###
+POST http://localhost:8080/conference/add-conference
+Content-Type: application/json
+
+{
+    "doi":"1",
+    "authorsList":["5K0","5K8","HELLO"],
+    "others":["sample HELLO"],
+    "title":"Sample Title HELLO"
+}
+
+###
+POST http://localhost:8080/conference/delete-conference
+Content-Type: application/json
+
+{
+    "doi":"1"
+}
+
+###
+PUT http://localhost:8080/conference/update-conference
+Content-Type: application/json
+
+{
+    "oldDoi":"1",
+    "doi":"2",
+    "authorsList":["5K6","5K3","5N3"],
+    "others":["sample 2 -HELLO"],
+    "title":"Sample Title 2 -HELLO"
+
+}
+
+###
+GET  http://localhost:8080/conference/all-conferences
+
+###
+GET  http://localhost:8080/conference/5N9
+
+###
+GET http://localhost:8080/users/user/5N3
+
+###
+GET  http://localhost:8080/conference/Students
+
+
+###
+POST http://localhost:8080/adminOps/add-index
+Content-Type: application/json
+
+{
+    "name":"Google Scholar"
+}
+
+###
+DELETE http://localhost:8080/adminOps/delete-index
+Content-Type: application/json
+
+{
+    "name":"Others"
+}
+
+###
+GET http://localhost:8080/adminOps/all-indices
+
+###
+
+GET http://localhost:8080/journal/MyJournals/5K8

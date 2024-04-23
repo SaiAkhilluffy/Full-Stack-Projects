@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@material-tailwind/react": "^1.4.2",
+    "multi-select-react": "^0.1.8",
+    "multiselect-react-dropdown": "^2.0.25",
+    "react-multi-select-component": "^4.3.4",
+    "react-multiple-select-dropdown-lite": "^2.0.6",
+    "react-select": "^5.7.2"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
